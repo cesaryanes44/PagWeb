@@ -24,5 +24,6 @@ namespace Admon.BL
 
         public DbSet<Paciente> Pacientes { get; set; }
         public DbSet<Categoria> Categorias { get; set; }
+        public DbSet<Cita> Citas { get; set; }
     }
 }
