@@ -19,7 +19,23 @@ namespace Admon.BL
 
         public List<Paciente> ObtenerPaciente()
         {
-            ListadePacientes = _contexto.Pacientes.Include("Categoria").ToList();
+            ListadePacientes = _contexto.Pacientes
+                .Include("Categoria")
+                .OrderBy(r => r.Nombre)
+                .ThenBy(r => r.Categoria)
+                .ToList();
+
+            return ListadePacientes;
+        }
+
+        public List<Paciente> ObtenerPacienteActivos()
+        {
+            ListadePacientes = _contexto.Pacientes
+                .Include("Categoria")
+                .Where(paciente => paciente.Activo == true)
+                .OrderBy(r => r.Nombre) 
+                .ToList();
+
             return ListadePacientes;
         }
 

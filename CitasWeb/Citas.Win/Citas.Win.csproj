@@ -79,7 +79,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\Admon.BL.Categoria.datasource" />
+    <None Include="Properties\DataSources\Admon.BL.CategoriasBL.datasource" />
+    <None Include="Properties\DataSources\Admon.BL.Cita.datasource" />
+    <None Include="Properties\DataSources\Admon.BL.CitasBL.datasource" />
+    <None Include="Properties\DataSources\Admon.BL.Contexto.datasource" />
+    <None Include="Properties\DataSources\Admon.BL.Paciente.datasource" />
     <None Include="Properties\DataSources\Admon.BL.PacientesBL.datasource" />
+    <None Include="Properties\DataSources\Citas.BL.TotalesCitas.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

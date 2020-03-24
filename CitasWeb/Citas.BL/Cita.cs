@@ -14,12 +14,18 @@ namespace Admon.BL
         public Paciente Paciente { get; set; }
         public DateTime Fecha { get; set; }
         public bool Activo { get; set; }
+        public object citas { get; internal set; }
 
         public Cita()
         {
             Activo = true;
             Fecha = DateTime.Now;
+          
+        }
 
+        internal int Sum(Func<object, object> p)
+        {
+            throw new NotImplementedException();
         }
     }
 }

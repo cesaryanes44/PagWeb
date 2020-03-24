@@ -28,6 +28,11 @@ namespace Admon.BL
         [Required(ErrorMessage = "Ingrese una Direccion")]
         public string Direccion { get; set; }
 
+        internal int Sum(Func<object, object> p)
+        {
+            throw new NotImplementedException();
+        }
+
         [Required(ErrorMessage = "Ingrese una Fecha de Nacimiento")]
         public string FechaNacimiento { get; set; }
         public int CategoriaId { get; set; }
@@ -37,5 +42,6 @@ namespace Admon.BL
         public string UrlImagen { get; set; }
 
         public bool Activo { get; set; }
+        public object Pacientes { get; internal set; }
     }
 }

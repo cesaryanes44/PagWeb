@@ -21,6 +21,18 @@ namespace Admon.BL
         {
             ListadeCitas = _contexto.Citas
                 .Include("Paciente")
+                .OrderBy(r => r.PacienteId)
+                .ToList();
+
+            return ListadeCitas;
+        }
+
+        public List<Cita> ObtenerCitasActivas()
+        {
+            ListadeCitas = _contexto.Citas
+                .Include("Paciente")
+                .Where(cita => cita.Activo == true)
+                .OrderBy(r => r.PacienteId)
                 .ToList();
 
             return ListadeCitas;
@@ -39,13 +51,17 @@ namespace Admon.BL
             }
             else
             {
-                var citaExistente = _contexto.Citas.Find(cita.Id);
+           
+                var citaExistente =  _contexto.Citas.Find(cita.Id);
                 citaExistente.PacienteId = cita.PacienteId;
+                citaExistente.Fecha = cita.Fecha;
                 citaExistente.Activo = cita.Activo;
             }
 
             _contexto.SaveChanges();
         }
+
+       
 
         public void EliminarCita(int id)
         {
