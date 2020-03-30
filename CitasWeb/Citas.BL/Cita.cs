@@ -15,6 +15,7 @@ namespace Admon.BL
         public DateTime Fecha { get; set; }
         public bool Activo { get; set; }
         public object citas { get; internal set; }
+        public TimeSpan Hora { get; set; }
 
         public Cita()
         {

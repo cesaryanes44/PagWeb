@@ -1,7 +1,249 @@
-﻿
+﻿@model List<Admon.BL.Paciente>
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Inicio";
 }
 
-<h2>Bienvenidos al Hospital, le ayudaremos a reservar sus citas</h2>
+<!-- welcome_clicnic_area_start -->
+<div class="welcome_clicnic_area">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-xl-6 col-lg-6">
+                <div class="welcome_thumb">
+                    <div class="thumb_1">
+                        <img src="~/img/inicio.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6">
+                <div class="welcome_docmed_info">
+                    <h3>
+                        Bienvendios a la
+                        <span>Clinica Moderna.</span>
+                    </h3>
+                    <p>
+                        Bienvenidos a nuestro sitio Web de Citas. La idea principal de este sitio es acercarlo a centro medico sin filas ni pérdida de tiempo
+                        Nuestra base de datos a nivel Nacional,nos permite acceder a las diferentes clinicas del país con solo un clic. tan fácil como ingresas tu ID
+                        si ya eres parte de nuestra red, escoger tu horario de preferencia. Si aùn no eres parte de la mejor red de citas en HONDURAS, te invitamos a
+                        llenar nuestro formulario y contar con nuestros beneficios....
+                    </p>
+                    <ul>
+                        <li> <i class="flaticon-verified"></i> Facil. </li>
+                        <li> <i class="flaticon-verified"></i> Rapido. </li>
+                        <li> <i class="flaticon-verified"></i> Confiable. </li>
+                        <li> <i class="flaticon-verified"></i> Con un par de clicks. </li>
+                        <li> <i class="flaticon-verified"></i> Desde la comodidad de su Hogar y al alcance de tu mano. </li>
+                    </ul>
+                    <a href="about.html" class="boxed-btn6">Sobre nosotros</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- welcome_clicnic_area_end -->
+<!-- depertment_area_start  -->
+<div class="depertment_area">
+    <div class="container">
+        <div class="row custom_align align-items-end justify-content-between">
+            <div class="col-lg-6">
+                <div class="section_title">
+                    <h3>Especialidades</h3>
+                    <p>Los diferentes Centros Medicos cuentan con:</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="learn_more_btn text-right">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="depart_ment_tab mb-30">
+                    <ul class="nav" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+                                <i class="flaticon-teeth"></i>
+                                <h4>Odontologia</h4>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+                                <i class="flaticon-cardiovascular"></i>
+                                <h4>Cardiología</h4>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">
+                                <i class="flaticon-ear"></i>
+                                <h4>Otorrinolaringología</h4>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="Astrology-tab" data-toggle="tab" href="#Astrology" role="tab" aria-controls="contact" aria-selected="false">
+                                <i class="flaticon-bone"></i>
+                                <h4>Ortopedia</h4>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="Neuroanatomy-tab" data-toggle="tab" href="#Neuroanatomy" role="tab" aria-controls="contact" aria-selected="false">
+                                <i class="flaticon-lung"></i>
+                                <h4>Neumología</h4>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="Blood-tab" data-toggle="tab" href="#Blood" role="tab" aria-controls="contact" aria-selected="false">
+                                <i class="flaticon-cell"></i>
+                                <h4>Oncología</h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="dept_main_info white-bg">
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <!-- single_content  -->
+                    <div class="row align-items-center">
+                        <div class="col-lg-5">
+                            <div class="dept_thumb">
+                                <img src="img/department/1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="dept_info">
+                                <h3>Odontología  <br> Especialidad y Campo de Acción</h3>
+                                <p>Odontología pretende prevenir, tratar y diagnosticar las enfermedades dentales y bucales mediante la aplicación de conocimientos en áreas de la salud y equipo especializado. El odontólogo es llamado también dentista y es un promotor de la salud. De igual forma se encarga de áreas como la investigación e incluso la docencia. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single_content  -->
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <!-- single_content  -->
+                    <div class="row align-items-center">
+                        <div class="col-lg-5">
+                            <div class="dept_thumb">
+                                <img src="img/department/corazon.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="dept_info">
+                                <h3>Cardiologia <br> Especialidad y Campo de Acción</h3>
+                                <ul>
+                                    <li> <i class="flaticon-verified"></i> La Cardiología es la parte de la Medicina que copa el marco de trabajo situado en el corazón y en el aparato vascular. Su finalidad básica es el estudio, diagnóstico, tratamiento y prevención de las enfermedades cardiovasculares. </li>
+                                    <li> <i class="flaticon-verified"></i> El cardiólogo es el profesional de la Medicina con preparación específica para asistir a pacientes con problemas cardiovasculares, ya sea como clínico, ya sea como técnico especializado en procedimientos diagnósticos y terapéutico  </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single_content  -->
+                </div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                    <!-- single_content  -->
+                    <div class="row align-items-center">
+                        <div class="col-lg-5">
+                            <div class="dept_thumb">
+                                <img src="img/department/oido.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="dept_info">
+                                <h3>Otorrinolaringolo<br> Especialidad y Campo de Acción</h3>
+                                <p>La labor del otorrino u otorrinolaringólogo va más allá de la salud del oído, la nariz o la garganta. El otorrino es el médico especializado en diagnosticar y tratar las enfermedades relacionadas con la nariz, los oídos y la garganta. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single_content  -->
+                </div>
+                <div class="tab-pane fade" id="Astrology" role="tabpanel" aria-labelledby="Astrology-tab">
+                    <!-- single_content  -->
+                    <div class="row align-items-center">
+                        <div class="col-lg-5">
+                            <div class="dept_thumb">
+                                <img src="img/department/hueso.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="dept_info">
+                                <h3>Ortopeda <br>Especialidad y Campo de Acción</h3>
+                                <p>Un médico ortopedista es el encargado de tratar problemas que afectan el sistema motor. Se encarga de diagnosticar, tratar (con terapias o cirugías), rehabilitar y prevenir las afecciones sufridas debido a accidentes, problemas congénitos o malas prácticas de postura. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single_content  -->
+                </div>
+                <div class="tab-pane fade" id="Neuroanatomy" role="tabpanel" aria-labelledby="Neuroanatomy-tab">
+                    <!-- single_content  -->
+                    <div class="row align-items-center">
+                        <div class="col-lg-5">
+                            <div class="dept_thumb">
+                                <img src="img/department/pulmon.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="dept_info">
+                                <h3>Neumologia <br> Especialidad y Campo de Acción</h3>
+                                <p>Asma bronquial, EPOC y fibrosis pulmonar son tres enfermedades fundamentales de la Neumología. Aunque por supuesto no son las únicas patologías que afectan a pulmones y sistema respiratorio, sí que son algunas de las más comunes y en muchos casos, los afectados por las mismas desconocen el diagnóstico, perpetuando y agravando los síntomas. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single_content  -->
+                </div>
+                <div class="tab-pane fade" id="Blood" role="tabpanel" aria-labelledby="Blood-tab">
+                    <!-- single_content  -->
+                    <div class="row align-items-center">
+                        <div class="col-lg-5">
+                            <div class="dept_thumb">
+                                <img src="img/department/oncologia.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="dept_info">
+                                <h3>Oncologia <br> Especialidad y Campo de Acción</h3>
+                                <p>Médico que tiene una formación especial para diagnosticar y tratar el cáncer. Algunos oncólogos se especializan en un tipo particular de tratamiento del cáncer. Por ejemplo, un radioncólogo se especializa en tratar el cáncer con radiación.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single_content  -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- depertment_area_end  -->
+<div class="book_apointment_area">
+    <div class="container">
+        <div class="row justify-content-end">
+            <div class="col-lg-7">
+                <div class="popup_box ">
+                    <div class="popup_inner">
+                        <h3>
+                            Haz tu Cita
+                            <span>Con nosotros</span>
+                            <p></p>
+                            <p><h6>Estos son Nuestros pacientes: </h6></p>
+                            @foreach (var cita in Model.Take(4)
+                                .OrderBy(r => Guid.NewGuid()))
+                            {                                                                                                                                                      
+                                        <div class="row justify-content-center">
+                                            <div class="col-lg-4 col-md-6">
+                                                <!--div class="single_expert"-->
+                                                <div class="expert_thumb">
+                                                    <img src="@(ViewBag.adminWebsiteUrl + cita.UrlImagen)" alt="" width="116" height="116">
+                                                </div>
+                                                <div class="experts_name text-center">
+                                                    <h6>@cita.Nombre</h6>
+                                                </div>  
+                                           </div>
+                                        </div>                                                                                                                      
+                            }
+</h3>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
