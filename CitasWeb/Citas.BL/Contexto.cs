@@ -11,7 +11,7 @@ namespace Admon.BL
 {
     public class Contexto : DbContext
     {
-        public Contexto() : base(@"Data Source=(LocalDb)\MSSQLLocalDB;AttachDBFilename=" + 
+        public Contexto() : base(@"Data Source=(LocalDb)\MSSQLLocalDB;AttachDBFilename=" +
             Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\CitasWebDB.mdf")
         {
 
@@ -20,10 +20,12 @@ namespace Admon.BL
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+            Database.SetInitializer(new DatosInicio());
         }
 
         public DbSet<Paciente> Pacientes { get; set; }
         public DbSet<Categoria> Categorias { get; set; }
         public DbSet<Cita> Citas { get; set; }
+        public DbSet<Usuario1> Usuarios { get; set; }
     }
 }
